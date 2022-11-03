@@ -38,7 +38,7 @@ function App() {
     console.log(elementas);
     setAvys((avys) => [...avys, ...elementas]);
     let avytes = localStorage.getItem("saugiosA");
-    if (avytes !== []) {
+    if (avytes !== null) {
       avytes = localStorage.setItem("saugiosA", JSON.stringify(avys));
     }
     const elementas1 = randomKarves();
